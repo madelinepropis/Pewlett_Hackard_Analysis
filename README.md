@@ -40,25 +40,13 @@ There are 72,458 employees retiring. As these employees begin retiring, these po
 
 One additional table that could be beneficial contains information displaying the number of employees participating in the mentorship program by title. The query and table are below:
 
--- Mentorship by title
-SELECT
-	title, count(emp_no)
-FROM
-	mentorship_eligibility
-GROUP BY
-	title;
+![image](https://user-images.githubusercontent.com/109561408/190302811-31db3871-567f-42f7-836d-45055a488b8c.png)
 
 ![image](https://user-images.githubusercontent.com/109561408/190301187-b2163b2b-b6d5-48e3-9941-1bc67aa775d8.png)
 
 Additionally, a table displaying the number of retiring employees per department would be helpful to see which departments will be impacted the most. The query and table are below:
 
--- Retiring Employees per Dept
-SELECT
-	*
-FROM
-	retirement_info
-GROUP BY
-	de.department
+![image](https://user-images.githubusercontent.com/109561408/190302861-c3348559-b6e0-45a5-8e77-106515878d23.png)
   
 ![image](https://user-images.githubusercontent.com/109561408/190302348-c4ebceaf-4607-4a15-8029-3978d2eb0525.png)
 
